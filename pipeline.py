@@ -7,7 +7,7 @@ import glob
 import json
 from dataclasses import dataclass, field
 from typing import Optional
-PROJ_DIR = "/path/to/code/code4SOV-MAS/transformers"
+PROJ_DIR = "/path/to/SOV-MAS/transformers"
 sys.path.append(os.path.join(PROJ_DIR, "src"))
 import transformers
 from transformers import (
