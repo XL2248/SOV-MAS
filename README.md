@@ -10,7 +10,7 @@ cudatoolkit=10.2
 ```
 
 # Visual Features Extraction and usage
-We follow the extraction process described in [1,2]. The code of incorporating image features are mainly borrowed from [VL-T5](https://github.com/j-min/VL-T5).
+We follow the extraction process described in [1,2]. The code of incorporating image features are mainly borrowed from [Vg-gplms](https://github.com/hltchkust/vg-gplms).
 
 # Data
 
@@ -36,4 +36,18 @@ bash evaluate.sh.
 ```
 [1] Jaemin Cho, Jie Lei, Hao Tan, and Mohit Bansal. Unifying vision-and-language tasks via text generation. In ICML, 2021: 1931–1942.
 [2] Anderson P, He X, Buehler C, et al. Bottom-up and top-down attention for image captioning and visual question answering[C]. In CVPR. 2018: 6077-6086.
+```
+
+# Citation
+```
+@misc{https://doi.org/10.48550/arxiv.2212.07672,
+  doi = {10.48550/ARXIV.2212.07672},
+  url = {https://arxiv.org/abs/2212.07672},
+  author = {Liang, Yunlong and Meng, Fandong and Xu, Jinan and Wang, Jiaan and Chen, Yufeng and Zhou, Jie},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Summary-Oriented Vision Modeling for Multimodal Abstractive Summarization},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
