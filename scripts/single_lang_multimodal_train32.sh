@@ -19,7 +19,7 @@ export evaluation_strategy="epoch"
 export evaluation_strategy="no"
 
 # model settings
-export ckpt=/path/to/trained/model/checkpoint/mt5-base/
+export ckpt=/path/to/trained/model/checkpoint/mt5-base/ # downloaded mt5-base model and rename it to mmt5-base for launch the "multimodal mt5" model.
 # optimization settings
 export learning_rate=5e-4
 export warmup_steps=250 # we used 10% of the total number of steps as warmup for monolingual training.
