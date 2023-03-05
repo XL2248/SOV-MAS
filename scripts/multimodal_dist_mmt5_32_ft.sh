@@ -20,7 +20,7 @@ export evaluation_strategy="no"
 
 # model settings
 #export model_name="google/mt5-base"
-export model_name="/path/to/trained/model/checkpoint/mt5-base"
+export model_name="/path/to/trained/model/checkpoint/mmt5-base" # downloaded mt5-base and rename it to mmt5-base for launch the "multimodal mt5" model.
 if false; then
 if [[ "${SLURM_PROCID:-0}" -eq 0 && "${SLURM_LOCALID:-0}" -eq 0 ]]; then
     mkdir -p $OUTPUT_DIR
