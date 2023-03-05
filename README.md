@@ -12,6 +12,10 @@ cudatoolkit=10.2
 # Visual Features Extraction and usage
 We follow the extraction process described in [1,2]. The code of incorporating image features are mainly borrowed from [VL-T5](https://github.com/j-min/VL-T5).
 
+# Data
+
+The textual data can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link)
+
 # Traing
 For multi-gpu training (8 gpus), run it like this: 
 ```
