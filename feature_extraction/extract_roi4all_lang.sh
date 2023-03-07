@@ -1,6 +1,6 @@
-home_dir=/path/to/BBC/crossum/XLSum_input
+home_dir=/path/to/BBC/xlsum/XLSum_input
 work_dir=/path/to/feature_extraction
-sign=$1 #xlsum/XLSum_input]# ls individual
+sign=$1 #xlsum/XLSum_input/individual_img
 image_path=$home_dir/$sign
 
 modes="train val test"
