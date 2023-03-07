@@ -16,7 +16,7 @@ The code of incorporating image features are mainly borrowed from [Vg-gplms](htt
 
 # Data
 
-All the triplet data <image urls, article, and summary> can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link). Note that the training data are not used under the zero-shot setting.
+All the triplet data <image urls, article, and summary> can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link). Note that the training data of zero-shot languages are not used under the zero-shot setting.
 
 # Traing
 For multi-gpu training (8 gpus), run it like this: 
