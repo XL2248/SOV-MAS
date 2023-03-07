@@ -10,7 +10,7 @@ cudatoolkit=10.2
 ```
 
 # Visual Features Extraction and usage
-We follow the extraction process described in [image_feature_extraction](https://github.com/j-min/VL-T5/tree/main/feature_extraction) [1,2]. 
+The visual features extraction code are mainly from [image_feature_extraction](https://github.com/j-min/VL-T5/tree/main/feature_extraction) [1,2]. 
 
 The code of incorporating image features are mainly borrowed from [Vg-gplms](https://github.com/hltchkust/vg-gplms).
 
