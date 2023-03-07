@@ -14,7 +14,7 @@ We follow the extraction process described in [1,2]. The code of incorporating i
 
 # Data
 
-The textual data can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link)
+The triplet data (image urls, article, and summary) can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link)
 
 # Traing
 For multi-gpu training (8 gpus), run it like this: 
