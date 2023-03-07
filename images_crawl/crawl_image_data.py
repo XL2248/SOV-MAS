@@ -144,12 +144,12 @@ def extract_data(input_dir, output_dir):
         mode = os.path.basename(input_file).rsplit("_")[-1].split('.')[0]
         print("lang", lang, n)
 
-        lang_dir = os.path.join(output_dir, "individual_imgs", lang)
+        lang_dir = os.path.join(output_dir, "individual_img", lang)
         os.makedirs(lang_dir, exist_ok=True)
 
         global tgt_image_path;
         img_path = "/path/to/BBC/xlsum/XLSum_input"
-        tgt_image_path = os.path.join(img_path, "individual_imgs", lang, mode)
+        tgt_image_path = os.path.join(img_path, "individual_img", lang, mode)
         os.makedirs(tgt_image_path, exist_ok=True)
 
         source_file = os.path.join(
