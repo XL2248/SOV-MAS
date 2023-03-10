@@ -21,7 +21,7 @@ All the triplet data <image urls, article, and summary> can be downloaded [here]
 # Traing
 For multi-gpu training (8 gpus), run it like this: 
 ```
-bash multimodal_dist_mmt5_32_ft.sh 4 11 mm-sum 1.0 8 256  
+bash multimodal_dist_mmt5_32_ft.sh 4 11 high-resource 1.0 8 256  
 ```
 For single-gpu training, run it like this: 
 ```
