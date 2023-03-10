@@ -19,13 +19,13 @@ The code of incorporating image features are mainly borrowed from [Vg-gplms](htt
 All the triplet data <image urls, article, and summary> can be downloaded [here](https://drive.google.com/file/d/1GWAYlQcR7QKGQOGjmS_9xwy5K1KZXfgM/view?usp=share_link). Note that the training data of zero-shot languages are not used under the zero-shot setting.
 
 # Traing
-For multi-gpu training (8 gpus), run it like this: 
+For multi-gpu multilingual training (8 gpus), run it like this: 
 ```
-bash multimodal_dist_mmt5_32_ft.sh 4 11 high-resource 1.0 8 256  
+bash multimodal_dist_mmt5_32_ft.sh 4 11 high-resource 1.0 8 256   # high-resource for reproducing Table 1.
 ```
-For single-gpu training, run it like this: 
+For single-gpu single-language training, run it like this: 
 ```
-bash single_lang_multimodal_train32.sh english # e.g., for training on english dataset.
+bash single_lang_multimodal_train32.sh high-resource english # e.g., for training on english dataset.
 ```
 
 # Testing
