@@ -6,7 +6,8 @@ export HOME=/path/to/code/directory
 export CUDA_VISIBLE_DEVICES=0 
 export code=/path/to/code/directory/code4SOV-MAS
 #cross_attn_type=$1
-lang=$1
+data_type=$1
+lang=$2
 alpha=1.0
 # training settings
 export num_train_epochs=20
@@ -32,7 +33,7 @@ export label_smoothing_factor=0.1
 export seed=1234
 
 # input / output settings
-export input_dir=${data}/XLSum_input/individual_img/${lang}
+export input_dir=${data}/SOV-MAS-data/${data_type}/${lang}
 #export output_dir="XLSum_output/individual/bengali"
 export output_dir=/path/to/output_dir/box_order_v0_multitask_lr5e4_ws250_${lang}_cl_mask_alpha${alpha}
 if [ ! -d $output_dir ]; then
