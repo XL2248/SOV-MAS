@@ -4,12 +4,12 @@
 # for ozstar only; the model must
 # be cached if this variable is set
 export LINK_CACHE_ONLY=true 
-export cross_attn_type=$1
-export fusion_layer=$2
-export data_type=$3
-export lr=$4
-export head_num=$5
-export img_len=$6
+export cross_attn_type=$1 # 4/3/2/1
+export fusion_layer=$2 # 11~0
+export data_type=$3 # few-shot/low-resource/high-resource; high-resource, low-resource, and few-shot for reproducing table 1, table 2, and few-shot of table 3.
+export lr=$4 # 3e-5 or others
+export head_num=$5 # 8
+export img_len=$6 #256
 # training settings
 export max_steps=35000
 export save_steps=2500
@@ -45,8 +45,8 @@ export upsampling_factor=0.5
 export seed=1234
 export BASE_DIR="/path/to/input_data_dir"
 # input / output settings
-export input_dir="${BASE_DIR}/XLSum_input/${data_type}"
-export output_dir="${BASE_DIR}/XLSum_output/${data_type}_multilingual_multimodal_multigpu_cross_attn_type${cross_attn_type}_fusion_layer${fusion_layer}_lr${lr}_headnum${head_num}_imglen${img_len}_box_order_v0_multitask_mask_upsamp${upsampling_factor}"
+export input_dir="${BASE_DIR}/SOV-MAS-data/${data_type}"
+export output_dir="${BASE_DIR}/output/${data_type}_multilingual_multimodal_multigpu_cross_attn_type${cross_attn_type}_fusion_layer${fusion_layer}_lr${lr}_headnum${head_num}_imglen${img_len}_box_order_v0_multitask_mask_upsamp${upsampling_factor}"
 if [ ! -d $output_dir ]; then
     mkdir $output_dir
     chmod 777 $output_dir -R
